@@ -215,21 +215,16 @@ def big_shoe_rebounds2
     team.each do |stats, figure|
       if stats = :players
         figure.each do |player|
-          if player[:shoe] > player[shoe]
+          if player[:shoe] > player[:shoe]
+            return player[:player_name]
+          end
+        end
       end
     end
   end
 end
-end
+ 
           
 
-def num_points_scored(players_name)
-  game_hash.each do |location, team|
-    team.each do |stat, figure|
-      if stat == :players
-        figure.each do |player|
-          if player[:player_name] == players_name
-            return player[:points]
-          end
 
 
