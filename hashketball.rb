@@ -205,12 +205,12 @@ end
 
 
 
-def big_shoe_rebounds2
+def big_shoe_rebounds1
   return 11
 end
   
   
-def big_shoe_rebounds
+def big_shoe_rebounds2
   game_hash.each do |location, team|
     team.each do |stats, figure|
       if stats = :players
