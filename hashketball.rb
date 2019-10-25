@@ -215,7 +215,7 @@ def big_shoe_rebounds2
     team.each do |stats, figure|
       if stats = :players
         figure.each do |player|
-          if player[:shoe].max
+          if player[:shoe]
       end
     end
   end
